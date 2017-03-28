@@ -1,6 +1,7 @@
 ---
+date:
 title:
 categories:
 author_staff_member:
-date:
+medium_link:
 ---

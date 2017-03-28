@@ -6,6 +6,7 @@ categories:
   - Linux
   - Hub
 author_staff_member: 03_tom
+medium_link: https://medium.com/@tom.houle/installing-the-hub-cli-on-linux-f55d22ff3377
 ---
 
 [Hub](https://github.com/github/hub) is a command line tool to interact with the Github-specific features of a repository,

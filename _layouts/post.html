@@ -7,6 +7,10 @@ layout: page
   <div class="post-content">
     {{ content }}
 
+    {% if page.medium_link %}
+      <i>Also published on <a href="{{ page.medium_link }}">medium.com</a>.</i>
+    {% endif %}
+
     <div class="author">
       {% assign author_id = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
       {% assign author = site.staff_members | where: "url", author_id | first %}
