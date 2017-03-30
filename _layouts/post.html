@@ -7,7 +7,16 @@ layout: page
   <div class="post-content">
     {{ content }}
 
-    {% if page.medium_link %}
+    {% if page.medium_link and page.practical_dev_link %}
+      <i>
+        Also published on
+        <a href="{{ page.practical_dev_link }}">dev.to</a>
+        and
+        <a href="{{ page.medium_link }}">medium.com</a>.
+      </i>
+    {% elsif page.practical_dev_link %}
+      <i>Also published on <a href="{{ page.practical_dev_link }}">dev.to</a>.</i>
+    {% elsif page.medium_link %}
       <i>Also published on <a href="{{ page.medium_link }}">medium.com</a>.</i>
     {% endif %}
 

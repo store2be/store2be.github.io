@@ -7,6 +7,7 @@ categories:
   - kops
 author_staff_member: 01_peter
 medium_link: https://medium.com/@peterfication/multi-az-kubernetes-with-kops-in-aws-regions-with-only-2-az-69e2edcc441d
+practical_dev_link: https://dev.to/peterfication/multi-az-kubernetes-with-kops-in-aws-regions-with-only-2-az
 ---
 
 At the moment we are setting up Kubernetes at store2be. We are a company from Germany and most of our business is
