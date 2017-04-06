@@ -6,8 +6,8 @@ categories:
   - BI
   - PostgreSQL
 author_staff_member: 01_peter
-medium_link:
-practical_dev_link:
+medium_link: https://medium.com/@peterfication/introduction-to-metabase-c699173dee19
+practical_dev_link: https://dev.to/peterfication/introduction-to-metabase
 ---
 
 When you start a company, setting up a business intelligence (BI) solution is not the first thing most founding teams
@@ -85,5 +85,5 @@ All in all, Metabase was really easy to setup for the tech team. If we had used 
 And most importantly, it is really easy and fun to use for all team members. 😊
 
 
-_Thanks Marco, for all the tips here 😊 In further posts I will go into detail on how we create advanced reports at
+_Thanks Marco, for all the tips here_ 😊 _In further posts I will go into detail on how we create advanced reports at
 [store2be](https://www.store2be.com)._
