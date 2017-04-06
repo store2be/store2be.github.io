@@ -30,7 +30,7 @@ I took another look at it but I still wasn't satisfied with the look and feel.
 
 At the same time of the release of AWS QuickSight, my former CTO at [fotograf.de](https://www.fotograf.de),
 [Marco Beinbrech](https://github.com/beinbm), showed me their BI solution, an open source software called [Metabase](http://www.metabase.com/).
-He told me that it is super simple to setup and easy to use for all team members (especially non-technical team members 😉).
+He told me that it is super simple to setup and easy to use for all team members (especially for non-technical team members 😉).
 
 And indeed, he is right. [Metabase provides different ways to deploy it anywhere.](http://www.metabase.com/start/) Most
 of our servers were at Heroku then and Metabase provides a one click deployment to Heroku. Pretty neat! But at that
