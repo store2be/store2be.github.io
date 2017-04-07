@@ -1,14 +1,7 @@
 ---
-date: 2017-04-07
-title: "Git rich or die tryin' 01: Ideas from our setups"
-categories:
-  - CLI
-  - Git
-  - Alias
-author_staff_member: 02_fausto
+title: Never Forgit
+description: A collection of our blog posts about git, git aliases and everything git.
 ---
-
-This post contains a list of the Git aliases we use the most, particularly the ones we find interesting (i.e., not `c = commit`) and that have increased our productivity using Git.
 
 # Rebasing
 
