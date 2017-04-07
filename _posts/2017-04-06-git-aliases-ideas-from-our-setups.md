@@ -6,6 +6,8 @@ categories:
   - Git
   - Alias
 author_staff_member: 02_fausto
+medium_link: https://medium.com/store2be-tech/git-rich-or-die-tryin-01-ideas-from-our-git-setups-f7a370a41257
+practical_dev_link: https://dev.to/brainlessdeveloper/git-rich-or-die-tryin-01-ideas-from-our-git-setups
 ---
 
 This post is part of a series about our Git setups. In this series we will focus on the Git aliases we use the most, particularly the ones we find interesting (i.e., not `c = commit`) and that have increased our productivity using Git.
