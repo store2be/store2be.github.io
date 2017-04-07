@@ -18,6 +18,10 @@
   link: https://github.com/store2be
   new_window: false
   highlight: false
+- name: Never Forgit
+  link: /never-forgit/
+  new_window: false
+  highlight: false
 - name: Jobs
   link: https://www.store2be.com/de/jobs/tech
   new_window: true
