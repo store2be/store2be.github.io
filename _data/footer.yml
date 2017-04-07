@@ -13,6 +13,10 @@
     link: https://github.com/store2be
     social_icon: Github
     new_window: true
+  - name: Medium
+    link: https://medium.com/store2be-tech
+    social_icon: Medium
+    new_window: true
   - name: Facebook
     link: https://facebook.com/store2be
     new_window: true
