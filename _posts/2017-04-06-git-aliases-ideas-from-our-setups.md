@@ -6,7 +6,6 @@ categories:
   - Git
   - Alias
 author_staff_member: 02_fausto
-medium_link: https://blabla.com
 ---
 
 In this post we will keep an updated list of the Git aliases we use the most, particularly the ones we find interesting (i.e., not `c = commit`) and that have increased our productivity using Git.
