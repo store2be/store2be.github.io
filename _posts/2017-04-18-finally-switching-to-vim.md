@@ -22,7 +22,7 @@ I recommend to start by [watching this introduction talk to vim by Mike Couterma
 
 In order to get a first impression [I started with an interactive online tutorial](http://www.openvim.com/). This tutorial provides a very good interactive introduction to the principles of vim. [And this is a very good read about the why of vim.](http://www.viemu.com/a-why-vi-vim.html)
 
-After that I realized that I need a list of all these movement commands. [Here is one to start with](http://vim.wikia.com/wiki/All_the_right_moves). Or even better you print out a vim cheat sheet: [This](https://rumorscity.com/wp-content/uploads/2014/08/10-Best-VIM-Cheat-Sheet-02.jpg) or [this](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png). The vim wiki has [a getting started page](http://vim.wikia.com/wiki/Category:Getting_started) that I found quite useful.
+After that I realized that I need a list of all these movement commands. [Here is a cheat sheet to start with](https://bitbucket.org/tednaleid/vim-shortcut-wallpaper/raw/tip/vim-shortcuts2560x1600.png). Or even better you print out a more complete vim cheat sheet: [This](https://rumorscity.com/wp-content/uploads/2014/08/10-Best-VIM-Cheat-Sheet-02.jpg) or [this](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png). The vim wiki has [a getting started page](http://vim.wikia.com/wiki/Category:Getting_started) that I found quite useful.
 
 In order to train the basic movements you can start playing [VIM Adventures](https://vim-adventures.com/).
 
