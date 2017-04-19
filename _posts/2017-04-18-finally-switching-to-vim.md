@@ -50,4 +50,4 @@ Finally, [start playing vimgolf](http://www.vimgolf.com/) from the beginning. It
 
 ***
 
-After one week of vim I'm not as productive as with RubyMine. If I really need to get something done fast I still open RubyMine. But most of the time I use vim now and I enjoy working with it. Two more weeks and RubyMine stays closed. What I miss the most is the awesome multi cursor implementation of RubyMine. But I already have been told that in vim you do things differently 😉
+After one week of vim I'm not as productive as with RubyMine. If I really need to get something done fast I still open RubyMine. But most of the time I use vim now and I enjoy working with it. Two more weeks and RubyMine stays closed. What I miss the most is the awesome multi cursor implementation of RubyMine. But I already have been told [that in vim you do things differently](https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db) 😉
