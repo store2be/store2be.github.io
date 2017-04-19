@@ -4,8 +4,8 @@ title: Finally switching to vim
 categories:
 - Vim
 author_staff_member: 01_peter
-medium_link:
-practical_dev_link:
+medium_link: https://medium.com/store2be-tech/finally-switching-to-vim-7df76c5b8a17
+practical_dev_link: https://dev.to/peterfication/finally-switching-to-vim
 ---
 
 This article is just a selection of things I found helpful when switching to vim. So when someone asks for help because he or she wants to switch to vim, I just pass him or her the link to this article. Some of the links in this article also describe why you should switch to vim. So I won't get into this here.
