@@ -15,31 +15,6 @@ Interactive rebase by the amount of commits passed through the first argument. U
 
 ![interactive rebase alias]({{ site.url }}/images/git_aliases/rbb.jpg)
 
-## cfix
-
-We can also use backticks surrounding a command to evaluate with the shell and pass the results as a part of our git alias. We use this with `rev-parse` in the following alias:
-
-``cfix = "!f() { git commit --fixup `git rev-parse --short HEAD` && git rebase -i HEAD~2 -i --autosquash; }; f"``
-
-We use `cfix` when the following situation arises. Say you've committed something with the message `Fix the terrible bug` only to find out that the fix did not actually work the way you expected. So you make your changes and go:
-
-`git add .`
-
-Now you commit the new, real fix:
-
-`git commit -m "Fix the terrible bug... again"`
-
-Wouldn't it be nice to just have the new changes added to the last commit? Well, you can do that with a `rebase`:
-
-`git rebase -i HEAD~2`
-
-This will leave you with your editor looking like the first image in this section. Then you can change the `pick {COMMIT HASH} Fix the terrible bug... again` line to `fixup {COMMIT HASH} Fix the terrible bug... again` and save the file, with the desired results.
-
-You can do exactly the same but avoiding the numerous commands by using `cfix`. Here's an example screen after adding changes and running `git cfix`:
-
-![use latest add as a fixup for last commit]({{ site.url }}/images/git_aliases/cfix.jpg)
-
-A similar result can be achieved using `git commit --amend`, but with `cfix` you can also `squash`, or even use the commit, and/or `reword` the previous one. Some people, however, don't recommend rewriting Git history. You might want to read up on the topic starting with posts like the ancient [Thou Shalt Not Lie: git rebase, amend, squash, and other lies](http://paul.stadig.name/2010/12/thou-shalt-not-lie-git-rebase-ammend.html).
 
 # Logging
 
