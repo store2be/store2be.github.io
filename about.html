@@ -10,6 +10,11 @@ description: store2be is a tech company based in Berlin. <br /> If you are inter
       <div class="square-image"><img src="{{ site.baseurl }}/{{ person.image_path }}" alt="{{ person.name }}"/></div>
       <div class="name"><a target="_blank" href="https://github.com/{{ person.github }}">{{ person.name }}</a></div>
       <div class="position">{{ person.position }}</div>
+      {% if person.vim_config %}
+        <div class="vim-config">
+          <a target="_blank" href="{{ person.vim_config }}">Vim config</a>
+        </div>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
