@@ -10,7 +10,7 @@ medium_link: https://medium.com/store2be-tech/releasing-papers-a-pdf-generation-
 practical_dev_link: https://dev.to/tomhoule/releasing-papers-a-pdf-generation-service-based-on-latex-written--in-rust
 ---
 
-The store2be team is happy to announce the [first public release](https://github.com/store2be/pape-rs/releases/tag/0.1.0) of [Papers](https://github.com/store2be/papers), an HTTP service that receives LaTeX templates, variables and assets needed for the generated LaTex file, and generates good looking PDFs. It is designed to be stateless, safe, reliable, easy to use and to deploy. We even have a second binary to test your templates locally before deploying them.
+The store2be team is happy to announce the [first public release](https://github.com/store2be/pape-rs/releases/tag/0.1.0) of [Papers](https://github.com/store2be/pape-rs), an HTTP service that receives LaTeX templates, variables and assets needed for the generated LaTex file, and generates good looking PDFs. It is designed to be stateless, safe, reliable, easy to use and to deploy. We even have a second binary to test your templates locally before deploying them.
 
 ## What? Why?
 
