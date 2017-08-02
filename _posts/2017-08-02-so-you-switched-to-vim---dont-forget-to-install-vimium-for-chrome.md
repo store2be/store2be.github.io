@@ -8,7 +8,7 @@ medium_link:
 practical_dev_link:
 ---
 
-A few months ago [I wrote about my first steps with Vim](https://tech.store2be.com/vim/2017/04/18/finally-switching-to-vim/). Now I can finally say: I am faster with Vim than I ever have been with RubyMine :tada: As soon as you get used to the Vim key bindings you demand them from every other program as well. In my mail program for example I try doing the most things with shortcuts now, too.
+A few months ago [I wrote about my first steps with Vim](https://tech.store2be.com/vim/2017/04/18/finally-switching-to-vim/). Now I can finally say: I am faster with Vim than I ever have been with RubyMine 🎉 As soon as you get used to the Vim key bindings you demand them from every other program as well. In my mail program for example I try doing the most things with shortcuts now, too.
 
 And recently I started using the Chrome Plugin [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb). It makes surfing the web much more efficient if you are used to the Vim key bindings already.
 
