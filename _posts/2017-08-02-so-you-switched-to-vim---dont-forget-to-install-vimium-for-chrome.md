@@ -4,8 +4,8 @@ title: So you switched to Vim - Don't forget to install Vimium for Chrome!
 categories:
 - Vim
 author_staff_member: 01_peter
-medium_link:
-practical_dev_link:
+medium_link: https://medium.com/store2be-tech/so-you-switched-to-vim-dont-forget-to-install-vimium-for-chrome-c0dcb136562d
+practical_dev_link: https://dev.to/peterfication/so-you-switched-to-vim---dont-forget-to-install-vimium-for-chrome
 ---
 
 A few months ago [I wrote about my first steps with Vim](https://tech.store2be.com/vim/2017/04/18/finally-switching-to-vim/). Now I can finally say: I am faster with Vim than I ever have been with RubyMine 🎉 As soon as you get used to the Vim key bindings you demand them from every other program as well. In my mail program for example I try doing the most things with shortcuts now, too.
