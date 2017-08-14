@@ -6,8 +6,8 @@ categories:
 - fzf
 - Productivity
 author_staff_member: 01_peter
-medium_link:
-practical_dev_link:
+medium_link: https://medium.com/store2be-tech/heroku-cli-meets-fzf-5f11b5037aa
+practical_dev_link: https://dev.to/peterfication/heroku-cli-meets-fzf
 ---
 
 
