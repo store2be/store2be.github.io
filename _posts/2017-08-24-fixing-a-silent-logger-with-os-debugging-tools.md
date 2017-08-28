@@ -5,6 +5,9 @@ categories:
 - Kubernetes
 - Rust
 title: Fixing a silent logger with OS debugging tools
+author_staff_member: 03_tom
+medium_link: https://medium.com/store2be-tech/fixing-a-silent-logger-with-os-debugging-tools-b4106ac45f54
+practical_dev_link: https://dev.to/tomhoule/fixing-a-silent-logger-with-osdebugging-tools
 ---
 
 One of the features we wanted in the recent push to release a [0.2 version of
