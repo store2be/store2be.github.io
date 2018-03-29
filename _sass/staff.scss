@@ -16,16 +16,15 @@
     @media #{$desktop} {
       @include flex(1, 1, 29%);
     }
-
   }
 
   .square-image {
     width: 200px;
     height: 200px;
-      img {
-        border-radius: 200px;
-      }
+    img {
+      border-radius: 200px;
     }
+  }
 
   .name {
     font-size: 1.3em;
@@ -34,5 +33,11 @@
 
   .position {
     color: #666;
+    margin-top: 10px;
+  }
+
+  .details {
+    font-size: 15px;
+    margin-top: 3px;
   }
 }
