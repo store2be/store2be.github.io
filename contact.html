@@ -1,23 +1,19 @@
----
-title: Contact
-heading: Contact
-description: Where we are at home.
-
-map:
-  latitude: 52.500657
-  longitude: 13.4189123
-  address: "Oranienstr. 185, 10999 Berlin, Germany"
-  zoom: 13
----
+--- title: Contact heading: Contact description: Where we are at home. map: latitude: 52.500657 longitude: 13.4189123 address:
+"Oranienstr. 185, 10999 Berlin, Germany" zoom: 13 ---
 <div class="map" id="map"></div>
 
 <div class="contact-box">
   <div class="contact-details">
     <h3 class="editable">Address</h3>
-    <address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+    <address>
+      <a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ",
+        <br>" }}</a>
+    </address>
 
     <h3 class="editable">Email</h3>
-    <p><a href="mailto:info@store2be.com">info@store2be.com</a></p>
+    <p>
+      <a href="mailto:info@store2be.com">info@store2be.com</a>
+    </p>
   </div>
 </div>
 

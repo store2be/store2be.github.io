@@ -1,4 +1,4 @@
-- name: Start
+- name: Home
   link: /
   new_window: false
   highlight: false
@@ -6,7 +6,7 @@
   link: /blog/
   new_window: false
   highlight: false
-- name: About
+- name: Team
   link: /about/
   new_window: false
   highlight: false
@@ -26,7 +26,7 @@
   link: /never-forgit/
   new_window: false
   highlight: false
-- name: Jobs
+- name: Work with us
   link: https://www.store2be.com/de/jobs/tech
   new_window: true
   highlight: true

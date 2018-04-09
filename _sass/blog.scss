@@ -12,7 +12,7 @@
     padding: 30px 0 0 0;
     border: 1px solid #eee;
     margin: 30px 0;
-    font-size: .8em;
+    font-size: 0.8em;
 
     .square-image {
       width: 125px;
@@ -29,7 +29,8 @@
   }
 
   h3 {
-    margin: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
     a {
       color: #000;
       text-decoration: none;
@@ -40,6 +41,7 @@
 
   h2 {
     text-align: left;
+    margin: 20px 0;
   }
 
   .blog-navigation {
@@ -60,8 +62,9 @@
   }
 
   .post-details {
-    border-bottom: 1px solid #eee;
-    font-size: .9em;
+    border-bottom: 1px solid #e4f1fe;
+    font-size: 0.9em;
+    margin-bottom: 5px;
 
     .blog-filter {
       display: inline-block;
@@ -89,8 +92,25 @@
   }
 
   .post-content {
+    font-size: 12px;
     .button {
       margin: 30px 0 0 0;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    .highlighter-rouge {
+      background: #e4f1fe;
+      border-radius: 5px;
+      white-space: pre-wrap;
+      padding: 2px 5px;
+    }
+
+    pre.highlight {
+      margin: 0;
+      padding: 8px;
     }
   }
 }
@@ -102,15 +122,15 @@
 .blog-filter {
   text-align: center;
   a {
-    background: #eee;
+    background: #e4f1fe;
     padding: 3px 5px;
-    font-size: .8em;
+    font-size: 0.8em;
     border-radius: 5px;
-    color: #888;
-    transition: .2s ease-in-out;
+    color: #444;
+    transition: 0.2s ease-in-out;
 
     &:hover {
-      color: #555;
+      color: #222;
       text-decoration: none;
     }
   }
@@ -121,7 +141,7 @@
 
   &:after {
     content: "x";
-    font-size: .5em;
+    font-size: 0.5em;
     position: relative;
     bottom: 4px;
     right: -3px;

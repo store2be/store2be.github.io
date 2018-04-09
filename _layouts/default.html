@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Rubik:400,500" rel="stylesheet">
   {% seo %}
   {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
@@ -23,7 +25,7 @@
   <body>
     <header>
       <div class="container">
-        <div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/store2be_logo.png" alt="store2be Logo" height="33" /></a></div>
+        <div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/store2be_logo.svg" alt="store2be Logo" height="33" /></a></div>
         {% include navigation.html %}
       </div>
     </header>
