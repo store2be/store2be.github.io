@@ -16,7 +16,6 @@
       max-width: 150px;
     }
     a {
-
       &:hover {
         text-decoration: none;
       }
@@ -74,13 +73,12 @@ footer {
   color: #fff;
 
   .copyright {
-    font-size: .8em;
+    font-size: 0.8em;
     margin: 0 auto;
 
     @media #{$tablet} {
       text-align: center;
     }
-
   }
 
   &,

@@ -1,4 +1,5 @@
-.container, .text-container {
+.container,
+.text-container {
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
@@ -18,13 +19,13 @@
 }
 
 header {
-  color: #fff;
+  color: #000000;
   padding: 20px 0;
-  background: $brand-color; /* Old browsers */
-  background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
+  background: white; /* Old browsers */
+  border-bottom: 1px solid #f1f1f1;
 
   a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     z-index: 1;
     position: relative;
@@ -55,7 +56,7 @@ header {
   position: relative;
 }
 
-.screenshot{
+.screenshot {
   max-width: 100%;
   height: auto;
   display: block;
@@ -63,7 +64,9 @@ header {
   border-radius: 2px;
   margin-left: auto;
   margin-right: auto;
-  background: #DDD url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2244%22%20height%3D%2212%22%20viewBox%3D%220%200%2044%2012%22%3E%3Ccircle%20cx%3D%226%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3Ccircle%20cx%3D%2238%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3C%2Fsvg%3E') 4px 4px no-repeat;
+  background: #ddd
+    url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2244%22%20height%3D%2212%22%20viewBox%3D%220%200%2044%2012%22%3E%3Ccircle%20cx%3D%226%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3Ccircle%20cx%3D%2238%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3C%2Fsvg%3E")
+    4px 4px no-repeat;
   padding: 20px 0 0 0;
   position: relative;
 }
@@ -79,8 +82,8 @@ section + section {
 .subtext {
   margin-top: 10px;
   text-align: center;
+  font-size: 18px;
 }
-
 
 .cta {
   margin: 60px 0;
@@ -93,14 +96,14 @@ section + section {
 blockquote {
   padding: 18px 25px;
   margin: 0;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
   font-style: italic;
 
   .author {
     display: block;
     font-weight: bold;
     margin: 10px 0 0 0;
-    font-size: .85em;
+    font-size: 0.85em;
     font-style: normal;
   }
 

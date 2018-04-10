@@ -1,21 +1,32 @@
-.button a, input[type=submit] {
-  color: #fff;
+.button a {
+  color: #4183d7;
   text-decoration: none;
-  padding: 10px 30px;
-  background: $brand-color;
   border-radius: 3px;
-  border: 1px solid rgba(255,255,255,.5);
-  transition: .2s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+  position: relative;
+}
+.button a:after {
+  content: "→";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  transition: 0.3s ease-in-out;
 }
 
-.button a:hover, input[type=submit]:hover {
+.button a:hover {
   border: 1px solid #fff;
-  background: $secondary-brand-color;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:after {
+    transition: 0.3s ease-in-out;
+    right: -23px;
+  }
 }
 
 .button.alt a {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 16px 50px;
@@ -26,13 +37,21 @@
   color: $brand-color;
 }
 
-textarea, input, button, select { font-family: inherit; font-size: inherit; }
+textarea,
+input,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
 
-input[type=submit] {
+input[type="submit"] {
   margin: 20px 0 0 0;
 }
 
-label, input, textarea {
+label,
+input,
+textarea {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -47,21 +66,26 @@ label {
   margin: 20px 0 5px 0;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   font-size: 1em;
 }
 
-input, textarea {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
+input,
+textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   outline: none;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
 }
