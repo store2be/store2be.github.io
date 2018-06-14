@@ -1,13 +1,15 @@
 ---
 date: 2018-06-14
 categories:
-- Email-
+- Email
 - Sendwithus
 - MJML
 - Typescript
 - React
 title: Email templates at store2be and GDPR — How we migrated away from Sendwithus
 author_staff_member: 01_peter
+medium_link: https://medium.com/store2be-tech/email-templates-at-store2be-and-gdpr-how-we-migrated-away-from-sendwithus-e4350b2c24ca
+practical_dev_link: https://dev.to/peterfication/email-templates-at-store2be-and-gdprhow-we-migrated-away-from-sendwithus-4go7
 ---
 
 When [store2be](https://www.store2be.com) started 3 years ago we were searching for a nice way to handle email templating and sending. I came across [Sendwithus](https://www.sendwithus.com), an email template service that connects to a lot of different email providers, like SendGrid, Mailjet, etc.
