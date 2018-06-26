@@ -5,7 +5,8 @@ categories:
 - Refactoring
 - Boy Scout rule
 title: Boy scout rule for opportunistic refactoring
-author_staff_member: 05_sooraj
+author_staff_member: 06_sooraj
+image: /images/boyscout.jpg
 ---
 
 ![Boytscout- image courtesy: Pixar.]({{ site.url }}/images/boyscout.jpg)
