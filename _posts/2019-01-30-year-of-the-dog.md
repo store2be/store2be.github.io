@@ -59,7 +59,8 @@ components.
 
 ## An unexpected journey - GraphQL in our apps
 
-In day to day frontend work however, architectural issues were still making our lives hard:
+Despite the numerous changes to the frontend workflow, architectural issues
+were still making our lives difficult.
 
 1. Our RESTful API structure had not evolved much: most of our endpoints were
    mapping directly to database tables, with little additional logic.  With more
@@ -93,13 +94,14 @@ RESTful API. Here is what we observed:
 2. **Data fetching in the frontend is now a lot less complex**, with queries
    mapping more or less 1-to-1 with views, and mutations to forms and buttons.
    We are not using any redux-based abstraction for CRUD anymore, and the
-   overall amount of state management code has decreased. State is (or
-   appears) also more localized to where it belongs in the component tree. We
-   found this easier to reason about.
+   overall amount of state management code has decreased. State is (or appears)
+   also more localized to where it belongs in the component tree. We found this
+   easier to reason about.
 3. The simplicity, but also the adherence to a well-adopted and documented
    standard for data fetching made **onboarding easier**. There are a lot of
-   good GraphQL resources for frontend developers. In our experience picking up
-   the technology was easy for everyone.
+   good GraphQL resources for frontend developers ([the official
+   guide](https://graphql.org/learn/), to mention just one). In our experience
+   picking up the technology was easy for everyone.
 4. The tooling is amazing, it lets us **leverage Typescript's strengths by
    generating precise types for our API data**. We use apollo-client and
    apollo-codegen, they are well-documented, worked fine and the caching layer
@@ -131,11 +133,11 @@ _store2be developer discovering GraphiQL (photo © unknown)_
 
 ## GraphQL in our Rails API
 
-Adopting GraphQL was in retrospect an easy win in the frontend. It did require
-some changes, but towards a more standard workflow with a wide array of tools
-to make our lives easier. It was not so in the API. GraphQL APIs pose a
-different set of problems and require different solutions, compared to purely
-RESTful APIs. To list a few of the challenges we faced:
+Adopting GraphQL was, in retrospect, an easy win in the frontend. It did
+require some changes, but towards a more standard workflow with a wide array of
+tools to make our lives easier. It was not the same in the API. GraphQL APIs
+pose a different set of problems and require different solutions, compared to
+purely RESTful APIs. To list a few of the challenges we faced:
 
 - **Code organization**. We naturally started by separating the API we expose
   to users and the one we use for our internal tools, since we had separate
@@ -170,21 +172,32 @@ Rails-specific methods in models and controllers.
 In short, the change was received enthusiastically by the whole team once the
 initial hurdles were behind us, and we are very happy with it.
 
-## Backend and infrastructure
+## Backend and infrastructure - events, k8s
 
 We started implementing an event log for our platform, for auditing, debugging
 and in the future for decoupling tasks. The primary feature at the moment is a
 timeline in our internal app, but it opens up a lot of perspectives and
 challenges for 2019.
 
-Another change we have been working at is the migration to Kubernetes. We
+Another change we have been working on is the migration to Kubernetes. We
 strictly adhere to _infrastructure as code_ and have all of our infrastructure
 defined as terraform scripts and helm charts. We want to complete the migration
 this year. We discovered a lot of tools on the way, but one fun tool that bears
 mentioning is [click](https://github.com/databricks/click); it acts as a kind
 of REPL/terminal UI for your kubernetes cluster.
 
-## Conclusion
+
+## The Tech Handbook
+
+At the end of 2017 our team was still at a scale where every developer had a
+relatively complete knowledge of the codebase in their head, but this could not
+last. We started and grew our internal development team documentation, what we
+call the Tech Handbook. It takes the shape of a GitHub repository with simple
+markdown files — with indexes and ToCs — so the editing workflow is comfortable
+for everyone. We discovered that as the codebase grows, this is not a
+nice-to-have but a necessity.
+
+## Sign-off
 
 ![store2be developer, early 2019]({{ site.url
 }}/images/2018_retrospective/hopeful_pallas_cat.jpg) _store2be developer, early
