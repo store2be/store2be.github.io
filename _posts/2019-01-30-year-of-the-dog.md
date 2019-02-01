@@ -28,8 +28,8 @@ _store2be developer, early 2018 (photo © Tambako The Jaguar, flickr)_
 
 We introduced Typescript in our React apps at the end of 2017, and we are only
 now getting close to completely typed frontend apps. Before Typescript, we had
-suffered from the churn in our JS architecture as we experimented with more
-scaleable approaches to state management and asynchronous actions - we had our
+suffered from churn in our JS architecture as we experimented with more
+scalable approaches to state management and asynchronous actions - we had our
 own abstractions on top of
 [redux-saga](https://github.com/redux-saga/redux-saga) and even open sourced
 our way to deal with boilerplate in redux,
@@ -53,16 +53,16 @@ We liked the experience so much we implemented a backend service for email templ
 in typescript and [wrote about
 it](https://tech.store2be.com/email/sendwithus/mjml/typescript/react/2018/06/14/email-templates-at-store2be-and-gdpr/).
 
-Another notable and much appreciated addition to our toolbox was
+Another notable and much-appreciated addition to our toolbox was
 [react-storybook](https://github.com/storybooks/storybook) for our shared UI
 components.
 
-## An unexpected journey - GraphQL
+## An unexpected journey - GraphQL in our apps
 
 In day to day frontend work however, architectural issues were still making our lives hard:
 
 1. Our RESTful API structure had not evolved much: most of our endpoints were
-   mapping directly to database table, with little additional logic.  With more
+   mapping directly to database tables, with little additional logic.  With more
    resources and more complex business logic, that meant **a lot of business
    logic had to be implemented in the frontend** and merely validated by the
    API.
@@ -111,7 +111,8 @@ RESTful API. Here is what we observed:
 It took some time to have a viable minimum implementation, but once this was
 deployed, it became clear very quickly that we wanted to go in that direction.
 
-Two more pain-points that we did not identify before migrating but are now obvious:
+Two more pain-points that we did not identify before migrating, but improved as
+a result:
 
 - **Debuggability**. [GraphiQL][graphiql] has been a boon to identify where
   errors come from.  With multiple requests that cannot be reproduced easily,
@@ -156,7 +157,7 @@ RESTful APIs. To list a few of the challenges we faced:
   [graphql-batch](https://github.com/Shopify/graphql-batch) (by Shopify), but
   this is one more thing to learn and implement.
 
-It took us a few months to arrive to satisfactory abstractions. Resources like
+It took us a few months to settle on satisfactory abstractions. Resources like
 the [Shopify GraphQL design
 tutorial](https://github.com/Shopify/graphql-design-tutorial) were helpful. In
 general, having someone with prior knowledge or significant interest/experience
@@ -172,7 +173,8 @@ initial hurdles were behind us, and we are very happy with it.
 ## Backend and infrastructure
 
 We started implementing an event log for our platform, for auditing, debugging
-and in the future decoupling tasks. It opens up a lot of perspectives and
+and in the future for decoupling tasks. The primary feature at the moment is a
+timeline in our internal app, but it opens up a lot of perspectives and
 challenges for 2019.
 
 Another change we have been working at is the migration to Kubernetes. We
@@ -188,7 +190,7 @@ of REPL/terminal UI for your kubernetes cluster.
 }}/images/2018_retrospective/hopeful_pallas_cat.jpg) _store2be developer, early
 2019 (photo © HuffingtonPost)_
 
-We made a lot of changes to our stack in 2018 and did not compromise the
+We made rather dramatic changes to our stack in 2018 and did not compromise the
 delivery of actual features in the process. There was no hard, breaking change,
 migration or rewrite, only improvements. Let us hope the same goes for 2019.
 
