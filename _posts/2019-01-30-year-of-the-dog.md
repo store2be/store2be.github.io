@@ -9,7 +9,7 @@ title: What changed in our stack in 2018
 author_staff_member: 03_tom
 ---
 
-As our team and codebase grows, we sometimes find the need to cast a look back
+As our team and codebase grow, we sometimes find the need to cast a look back
 at how things changed, and remember fondly the code we wrote and deleted, the
 abstractions we built and scrapped, how our code used to be, and how much fun
 it was to get it to where it is now.
