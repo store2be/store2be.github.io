@@ -7,6 +7,8 @@ categories:
 - API
 title: What changed in our stack in 2018
 author_staff_member: 03_tom
+medium_link: https://medium.com/@tom.houle/what-changed-in-our-stack-at-store2be-in-2018-a-retrospective-e3096f516c38
+practical_dev_link: https://dev.to/tomhoule/what-changed-in-our-stack-at-store2be-in-2018---a-retrospective-4h9
 ---
 
 As our team and codebase grow, we sometimes find the need to cast a look back
