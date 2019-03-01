@@ -15,7 +15,6 @@ Interactive rebase by the amount of commits passed through the first argument. U
 
 ![interactive rebase alias]({{ site.url }}/images/git_aliases/rbb.jpg)
 
-
 # Logging
 
 There are many different options when it comes to customizing `git log`. Some of the most common options are passed using flags like `--graph` or `--decorate`, but the main differentiator is `--pretty`. Here are some of ours, with screenshots to showcase them:

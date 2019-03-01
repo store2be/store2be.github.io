@@ -14,6 +14,10 @@
   link: /our-stack/
   new_window: false
   highlight: false
+- name: Our values
+  link: /values/
+  new_window: false
+  highlight: false
 - name: Contact
   link: /contact/
   new_window: false
