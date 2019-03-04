@@ -1,6 +1,6 @@
 ---
 title: Our Values
-description: Values we stick to in store2be tech team
+description: Values we stick to in the store2be tech team
 ---
 
 ### Grow together and be supportive
