@@ -1,0 +1,165 @@
+body,
+html {
+  background: black;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.single-step {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.directions {
+  margin: auto;
+  width: 600px;
+}
+
+.single-step-text {
+  animation: typing 3.5s steps(40, end), blink-caret 1s step-end infinite;
+  border-right: 0.15em solid orange;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(0, 255, 38, 1);
+  }
+}
+
+.navbar {
+  background: #6ef442;
+  height: 55px;
+  padding: 10px;
+}
+
+.navbar-brand {
+  float: left;
+}
+.nav-link {
+  float: right;
+}
+.directions {
+  border: 2px dashed rgba(0, 255, 38, 1);
+  padding: 20px;
+}
+
+.call-to-action {
+  font-size: 40px;
+  margin-top: 20px;
+  margin: auto;
+  width: 400px;
+}
+
+.call-to-action-text {
+  animation-fill-mode: forwards;
+  animation: flicker 3s infinite;
+}
+
+.loading-wrapper {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.file-input-inner {
+  display: none;
+}
+
+.file-name {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    color: #00ff44;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+    color: #bff442;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    color: #ff0217;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+    color: #00faff;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+    color: #c301ff;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.result {
+  border-style: none;
+  display: block;
+  margin: auto;
+}
