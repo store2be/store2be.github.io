@@ -48,6 +48,9 @@ We won’t go into details about code documentation, because this is something a
 
 ## Tech Documentation
 
+![The Tech Handbook]({{ site.url }}/images/tech_documentation/tech_handbook_intl.png)
+_The Tech Handbook_
+
 The main topic of this blog post is our tech documentation. In this part of the documentation, we collect the most knowledge of the engineering team and this is what helps us scale the engineering team. We call it: _The Tech Handbook_.
 
 Looking back into 2017, we had nearly no tech documentation at all. We were still just a team of three and we hadn’t thought too much about documentation at that point. In hindsight, this is super bad and something we will avoid in the future, because now we know how valuable proper documentation is.
