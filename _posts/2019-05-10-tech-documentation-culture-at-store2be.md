@@ -6,8 +6,8 @@ categories:
 - Engineering
 title: Tech documentation culture at store2be
 author_staff_member: 01_peter
-medium_link:
-practical_dev_link:
+medium_link: https://medium.com/store2be-tech/tech-documentation-culture-at-store2be-10230b7000e3
+practical_dev_link: https://dev.to/peterfication/tech-documentation-culture-at-store2be-11m9
 ---
 ![Our documenation setup]({{ site.url }}/images/tech_documentation/library.jpg)
 _Our documentation setup (photo by Michael D Beckwith, flickr)_
