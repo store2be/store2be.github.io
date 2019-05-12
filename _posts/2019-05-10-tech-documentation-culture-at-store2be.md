@@ -36,9 +36,9 @@ In this article, we want to share how we approach documentation at store2be. Doc
 
 Everything that is of importance for all departments needs to go into our company-wide documentation. For example, if something technical is important for the product team as well, we will put it in the company-wide documentation.
 
-The engineering wide documentation is for all the technical things that are only relevant for the engineering and the devops team. In this part of the documentation, there is also the frontend and the backend related documentation that is shared across all our apps, so we don’t have to repeat it in these repositories.
+The tech documentation is for all the technical things that are only relevant for the engineering and the devops team. In this part of the documentation, there is also frontend and backend related documentation that is shared across all our apps, so we don’t have to repeat it in these repositories.
 
-Our engineering wide documentation is a Git repository with markdown files. This has the advantage that we can write it easily offline and use our favourite tools to edit and search the documentation. Also, everyone has always a local copy of the whole documentation present.
+Our tech documentation is a Git repository with markdown files. This has the advantage that we can write it offline and use our favourite tools to edit and search the documentation. Also, everyone has always a local copy of the whole documentation present.
 
 Infrastructure as code happens, when you use tools to describe your infrastructure in a declarative way and you don’t manage your infrastructure manually. Some tools that we use in that context are [Terraform](https://www.terraform.io/) and [Kubernetes](https://kubernetes.io/).
 
