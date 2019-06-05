@@ -10,9 +10,13 @@
   link: /about/
   new_window: false
   highlight: false
-- name: Our Stack
-  link: /our-stack/
-  new_window: false
+# - name: Our Stack
+#   link: /our-stack/
+#   new_window: false
+#   highlight: false
+- name: Tech Radar
+  link: https://store2be.github.io/tech-radar
+  new_window: true
   highlight: false
 - name: Our values
   link: /values/
