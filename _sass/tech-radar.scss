@@ -1,0 +1,15 @@
+.radar-container {
+  max-width: 100%;
+  overflow: scroll;
+}
+
+.tech-radar {
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+#radar {
+  //   transform: scale(0.8);
+  transform-origin: 0px 0px;
+}

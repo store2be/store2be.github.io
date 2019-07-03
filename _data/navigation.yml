@@ -15,8 +15,8 @@
 #   new_window: false
 #   highlight: false
 - name: Tech Radar
-  link: https://store2be.github.io/tech-radar
-  new_window: true
+  link: /tech-radar/
+  new_window: false
   highlight: false
 - name: Our values
   link: /values/

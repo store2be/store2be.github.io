@@ -1,0 +1,423 @@
+---
+title: Tech Radar
+description: The Tech Radar is a tool to inspire and support engineering teams at store2be to pick the best technologies for new projects.
+---
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://store2be.github.io/tech-radar/radar.js"></script>
+
+<p>
+  Its purpose is to provide a platform to share knowledge and experience in
+  technologies, to reflect on technology decisions and continuously evolve our
+  technology landscape. Based on the
+  <a href="https://www.thoughtworks.com/radar"
+    >pioneering work of ThoughtWorks</a
+  >, our Tech Radar sets out the changes in technologies that are interesting in
+  software development &mdash; changes that we think our engineering teams
+  should pay attention to and consider using in their projects.
+</p>
+<div class="radar-container">
+  <svg viewBox="0 0 1750 800" id="radar"></svg>
+</div>
+
+<script>
+  radar_visualization({
+    svg_id: "radar",
+    width: 1400,
+    height: 800,
+    colors: {
+      background: "#fff",
+      grid: "#bbb",
+      inactive: "#ddd"
+    },
+    title: "",
+    quadrants: [
+      { name: "Languages" },
+      { name: "Infrastructure" },
+      { name: "Frameworks/Libraries" },
+      { name: "Data Management" }
+    ],
+    rings: [
+      { name: "ADOPT", color: "#93c47d" },
+      { name: "TRIAL", color: "#93d2c2" },
+      { name: "ASSESS", color: "#fbdb84" },
+      { name: "RETIRE/LEGACY", color: "#efafa9" }
+    ],
+    print_layout: true,
+    // zoomed_quadrant: 0,
+    //ENTRIES
+    entries: [
+      // Languages
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "Ruby",
+        active: false,
+        link: "../more/ruby.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "Typescript",
+        active: false,
+        link: "../more/typescript.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "GraphQL",
+        active: false,
+        link: "../more/graphql.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "SCSS",
+        active: false,
+        link: "../more/scss.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Rust",
+        active: false,
+        link: "../more/rust.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 3,
+        label: "JavaScript",
+        active: false,
+        link: "../more/javascript.html",
+        moved: 0
+      },
+
+      // Infrastructure
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "GCP",
+        active: false,
+        link: "../more/gcp.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Terraform",
+        active: false,
+        link: "../more/terraform.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Docker",
+        active: false,
+        link: "../more/docker.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Kubernetes",
+        active: false,
+        link: "../more/kubernetes.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Helm",
+        active: false,
+        link: "../more/helm.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Let's encrypt",
+        active: false,
+        link: "../more/lets-encrypt.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Sentry",
+        active: false,
+        link: "../more/sentry.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Sendgrid",
+        active: false,
+        link: "../more/sendgrid.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Prometheus",
+        active: false,
+        link: "../more/prometheus.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Grafana",
+        active: false,
+        link: "../more/grafana.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Heroku",
+        active: false,
+        link: "../more/heroku.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "AWS",
+        active: false,
+        link: "../more/aws.html",
+        moved: 0
+      },
+
+      // Frameworks/Libraries
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Rails",
+        active: false,
+        link: "../more/rails.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Sidekiq",
+        active: false,
+        link: "../more/sidekiq.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "GraphQL Ruby",
+        active: false,
+        link: "../more/graphql-ruby.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "React",
+        active: false,
+        link: "../more/react.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Jest",
+        active: false,
+        link: "../more/jest.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Webpack",
+        active: false,
+        link: "../more/webpack.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Express",
+        active: false,
+        link: "../more/express.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "MJML",
+        active: false,
+        link: "../more/mjml.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Apollo client",
+        active: false,
+        link: "../more/apollo-client.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Emotion (SCSS in JS)",
+        active: false,
+        link: "../more/emotion.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Cypress",
+        active: false,
+        link: "../more/cypress.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Hyper (Rust)",
+        active: false,
+        link: "../more/hyper.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "jQuery",
+        active: false,
+        link: "../more/jquery.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Redux",
+        active: false,
+        link: "../more/redux.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Redux Saga",
+        active: false,
+        link: "../more/redux-saga.html",
+        moved: 0
+      },
+
+      // Data Management
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "PostgreSQL",
+        active: false,
+        link: "../more/postgresql.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Redis",
+        active: false,
+        link: "../more/redis.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Amazon S3",
+        active: false,
+        link: "../more/amazon-s3.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Google Cloud Storage",
+        active: false,
+        link: "../more/google-cloud-storage.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "RabbitMQ",
+        active: false,
+        link: "../more/rabbitmq.html",
+        moved: 0
+      }
+    ]
+    //ENTRIES
+  });
+</script>
+
+<div class="tech-radar">
+  <h3>What is the Tech Radar?</h3>
+  <p>
+    The store2be Tech Radar is a list of technologies, complemented by an
+    assessment result, called <em>ring assignment</em>. We use four rings with
+    the following semantics:
+  </p>
+  <ul>
+    <li>
+      <strong>ADOPT</strong> &mdash; Technologies we have high confidence in to
+      serve our purpose, also in large scale. Technologies with a usage culture
+      in our store2be production environment, low risk and recommended to be
+      widely used.
+    </li>
+    <li>
+      <strong>TRIAL</strong> &mdash; Technologies that we have seen work with
+      success in project work to solve a real problem; first serious usage
+      experience that confirm benefits and can uncover limitations. TRIAL
+      technologies are slightly more risky; some engineers in our organization
+      walked this path and will share knowledge and experiences.
+    </li>
+    <li>
+      <strong>ASSESS</strong> &mdash; Technologies that are promising and have
+      clear potential value-add for us; technologies worth to invest some
+      research and prototyping efforts in to see if it has impact. ASSESS
+      technologies have higher risks; they are often brand new and highly
+      unproven in our organisation. You will find some engineers that have
+      knowledge in the technology and promote it, you may even find teams that
+      have started a prototyping effort.
+    </li>
+    <li>
+      <strong>RETIRE/LEGACY</strong> &mdash; Technologies not recommended to be
+      used for new projects. Technologies that we think are not worth to further
+      invest in. RETIRE/LEGACY technologies should not be used for new projects,
+      but usually can be continued for existing projects.
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h3>How do we maintain it?</h3>
+
+  <p>
+    The Tech Radar is maintained by the whole
+    <em>store2be engineering team</em>. Assignment of technologies to rings is
+    the outcome of ring change proposals, which are discussed and voted on
+    store2be tech discussions. The Tech Radar depends on active participation
+    and input from all engineering members at store2be.
+  </p>
+
+  <p>
+    <em
+      >The code and idea for this Tech Radar is originally from
+      <a href="https://github.com/zalando/tech-radar">Zalando</a>.</em
+    >
+  </p>
+  <p>Last updated: July 2019</p>
+</div>
