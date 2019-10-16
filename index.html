@@ -1,55 +1,74 @@
 ---
 title: store2be Tech
 description: News, updates and tech tips from engineers at store2be.
+image: '/images/home.png'
 ---
 
 <section class="hero">
-  <div class="text-container">
-    <h1 class="editable">store2be <strong>Tech</strong></h1>
-    <p class="subtext editable"></p>
+  <div class="row container">
+    <div class="col-sm-6 main-text">
+      <h1 class="">Home of the tech team at <a href="https://www.store2be.com">store2be</a></h1>
+      <p class="home-page-sub-text">We share our learnings, team news, and updates here</p>
+      <a class="btn btn-primary btn-main" href="/blog/">Visit our blog</a>
+    </div>
+    <div class="col-sm-6">
+      <img class="hero-image" src="images/hero-image.svg">
+    </div>
   </div>
 </section>
-
 <div class="content">
   <section>
-    <div class="container flex">
-      <div class="text editable">
-        <h2>The store2be tech blog</h2>
-        <p>
-          News, updates and tech tips from engineers at store2be.
-        <p>
-        </p>
-          <a href="{{ site.url }}/blog">Have a look at the blog section.</a>
-        </p>
+    <div class="container row">
+      <div class="col-md-4">
+        <div class="home-page-card row">
+          <div class="card-image-container col-sm-2">
+            <img class="card-image" src="/images/tech-blog.svg">
+          </div>
+          <div class="card-content col-sm-10">
+            <a href="{{ site.url }}/blog">
+              <h3>Tech blog</h3>
+            </a>
+            <p>
+              News, updates, and technical tips from engineering team at store2be.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="home-page-card row">
+          <div class="card-image-container col-sm-2">
+              <img class="card-image" src="/images/open-source.svg">
+          </div>
+          <div class="card-content col-sm-10">
+            <a href="https://github.com/store2be">
+              <h3>Open source</h3>
+            </a>
+            <p>
+                We are believers in the power of open-source code, and we try to contribute.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="home-page-card row">
+          <div class="card-image-container col-sm-2">
+              <img class="card-image" src="/images/heart.svg">
+          </div>
+          <div class="card-content col-sm-10">
+            <a href="/values">
+              <h3>Our values</h3>
+            </a>
+            <p>
+              We hold an incredibly high standard when it comes to sticking to our values.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-
-  <section>
-    <div class="container flex">
-      <div class="text editable">
-        <h2>Papers</h2>
-        <p>A Latex template to PDF generation web service written in Rust.</p>
-        <p>
-          <a href="https://store2be.github.io/pape-rs/">Website</a>
-          |
-          <a href="https://github.com/store2be/pape-rs">Github</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container flex">
-      <div class="text editable">
-        <h2>redux-belt</h2>
-        <p>Opinionated helpers for Redux and Redux-Saga.</p>
-        <p>
-          <a href="https://store2be.github.io/redux-belt/">Website</a>
-          |
-          <a href="https://github.com/store2be/redux-belt">Github</a>
-        </p>
-      </div>
+    <div class="container text-center mt-4">
+      <h4>
+        <a href="https://store2be.softgarden.io/en/vacancies">Tadaa! 🎉 We are hiring ➜</a>
+      </h4>
     </div>
   </section>
 </div>

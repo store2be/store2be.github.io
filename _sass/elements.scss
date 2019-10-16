@@ -4,8 +4,10 @@ body {
   padding: 0;
 }
 
+$font-name:'Libre Franklin', sans-serif;
+
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: $font-name;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -40,19 +42,19 @@ h2 strong {
 h1,
 h2,
 h3 {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 2.3em;
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: $font-name;
 }
 
 h2 {
   font-size: 2.2em;
   margin: 0 0 30px 0;
-  font-family: "Rubik", sans-serif;
+  font-family: $font-name;
 }
 
 h3 {
@@ -61,7 +63,7 @@ h3 {
 
 p,
 address {
-  font-family: "Roboto Slab", serif;
+  font-family: $font-name;
   font-size: 14px;
   color: #000000;
   margin-bottom: 20px;

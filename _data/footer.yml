@@ -1,15 +1,19 @@
 - links:
   - name: Blog
     link: /blog/
-  - name: About
+  - name: Team
     link: /about/
   - name: Contact
     link: /contact/
-  - name: Jobs
+  - name: We are hiring
     link: https://store2be.softgarden.io/en/vacancies
 - links:
-  - name: Never Forgit
-    link: /never-forgit/
+  - name: Location finder
+    link: /https://www.store2be.com/en/locations/
+  - name: Event Analytics
+    link: /https://www.store2be.com/en/event-analytics/
+  - name: Press
+    link: /https://www.store2be.com/en/press/
 - links:
   - name: Github
     link: https://github.com/store2be
