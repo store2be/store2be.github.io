@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.5.3'
 
-gem 'jekyll', '3.7.0'
+gem 'jekyll', '3.7.4'
 
 group :jekyll_plugins do
   gem 'jekyll-archives', '2.1.1'
