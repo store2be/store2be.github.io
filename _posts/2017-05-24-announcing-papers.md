@@ -94,8 +94,6 @@ There are already many other features that go in the direction of more configura
 
 ## Epilogue
 
-If you read this far, we'd be really interested in feedback on our endeavour and on the code if you have some. Just shoot us an email at tech@store2be.com :)
-
 For comprehensive documentation, you can head to the [README](https://github.com/store2be/pape-rs/README.md).
 
 This is of course all open source, released under the MIT license, and [available on Github](https://github.com/store2be/pape-rs). We are very much open to contributions.

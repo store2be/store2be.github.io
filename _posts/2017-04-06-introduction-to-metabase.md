@@ -37,7 +37,6 @@ of our servers were at Heroku then and Metabase provides a one click deployment 
 time we were also undertaking our first steps with Kubernetes and Metabase seemed to a be a perfect fit to play around with
 Kubernetes. So we wrote the Kubernetes objects for it and voilà, it was up and running. No hassle at all!
 
-
 ## Further setup
 
 _A collection of things you should consider when setting up Metabase_
@@ -63,7 +62,6 @@ User management can be handled with user groups and collections (folders for you
 the tip to set up collections and and user groups according to the department structure. This way you can implement
 user access on a collection level very easily.
 
-
 ## First steps
 
 I really recommend [reading the docs of Metabase](http://www.metabase.com/docs/v0.23.1/). They are really good,
@@ -78,12 +76,10 @@ _Me encanta!_ 😊
 
 Finally, you can put multiple questions on a dashboard and have a nice overview of what's going on in the company.
 
-
 ## Conclusion
 
 All in all, Metabase was really easy to setup for the tech team. If we had used Heroku, it would have been even easier.
 And most importantly, it is really easy and fun to use for all team members. 😊
 
-
 _Thanks Marco, for all the tips here_ 😊 _In further posts I will go into detail on how we create advanced reports at
-[store2be](https://www.store2be.com)._
+store2be._

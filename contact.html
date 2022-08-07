@@ -9,15 +9,19 @@ map:
   address: "Oranienstr. 185, 10999 Berlin, Germany"
   zoom: 13
 ---
+
 <div class="map" id="map"></div>
 
 <div class="contact-box">
   <div class="contact-details">
     <h3 class="editable">Address</h3>
-    <address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
-
-    <h3 class="editable">Email</h3>
-    <p><a href="mailto:info@store2be.com">info@store2be.com</a></p>
+    <address>
+      <a
+        target="_blank"
+        href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}"
+        >{{ page.map.address | replace: ", ", ", <br />" }}</a
+      >
+    </address>
   </div>
 </div>
 
@@ -158,4 +162,8 @@ map:
     });
   }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"
+></script>

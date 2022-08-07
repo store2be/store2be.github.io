@@ -2,14 +2,13 @@
 date: 2017-08-14
 title: Heroku CLI meets fzf
 categories:
-- Heroku
-- fzf
-- Productivity
+  - Heroku
+  - fzf
+  - Productivity
 author_staff_member: 01_peter
 medium_link: https://medium.com/store2be-tech/heroku-cli-meets-fzf-5f11b5037aa
 practical_dev_link: https://dev.to/peterfication/heroku-cli-meets-fzf
 ---
-
 
 While working with tmux and [fzf](https://github.com/junegunn/fzf) I came across another interesting fzf use case: Use a fuzzy finder to simplify the use of the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 
@@ -17,7 +16,7 @@ Imagine you have some apps on Heroku and now and then you want to tail their log
 
 **But what about a fuzzy finder for your Heroku apps in the CLI? 🤖**
 
-[When I switched to vim](https://tech.store2be.com/vim/2017/04/18/finally-switching-to-vim/), I first heard about fzf and began using it with joy to open my files. I recently started using tmux and there fzf can be a great help as well. [This stackoverflow post](https://stackoverflow.com/questions/37730996/tmux-script-for-fast-window-switching-with-fzf-tmux-gives-me-the-wrong-options) showed me how to use fzf for switching between tmux windows. I also used this approach to switch between tmux sessions (and shared the solution in the linked stackoverflow post). This eventually lead to the idea of using fzf in combination with the Heroku CLI.
+[When I switched to vim](/vim/2017/04/18/finally-switching-to-vim/), I first heard about fzf and began using it with joy to open my files. I recently started using tmux and there fzf can be a great help as well. [This stackoverflow post](https://stackoverflow.com/questions/37730996/tmux-script-for-fast-window-switching-with-fzf-tmux-gives-me-the-wrong-options) showed me how to use fzf for switching between tmux windows. I also used this approach to switch between tmux sessions (and shared the solution in the linked stackoverflow post). This eventually lead to the idea of using fzf in combination with the Heroku CLI.
 
 ![Heroku CLI with fzf]({{ site.url }}/images/heroku-cli-with-fzf.jpg)
 
@@ -33,7 +32,6 @@ Of course you should create aliases for that:
 alias heroku-logs="heroku apps --all | grep '(' | sed 's/ .*$//' | fzf --header='Select the app you want to tail the logs' | xargs heroku logs -t -a"
 alias heroku-bash="heroku apps --all | grep '(' | sed 's/ .*$//' | fzf --header='Select the app you want to bash into' | xargs heroku logs -t -a"
 ```
-
 
 ## Step by step explanation
 
@@ -51,7 +49,7 @@ shrouded-fortress-18816 (eu)          someone-else@example.com
 
 ```
 
-***
+---
 
 First, we remove all the lines by piping the output to grep. Every line with an app contains brackets so we use the brackets to filter the lines.
 
@@ -63,7 +61,7 @@ nameless-basin-19036 (eu)
 shrouded-fortress-18816 (eu)          someone-else@example.com
 ```
 
-***
+---
 
 Next, we have to ensure that we only take the app name with nothing else. So we remove everything after the app name, starting with the empty space.
 
@@ -75,7 +73,7 @@ nameless-basin-19036
 shrouded-fortress-18816
 ```
 
-***
+---
 
 This is a nice list we can pipe to fzf. The result of fzf is then piped to the heroku command that we want to execute:
 
@@ -88,4 +86,5 @@ After selecting the desired app with fzf, the command finally expands for exampl
 ```
 $ heroku logs -t -a shrouded-fortress-18816
 ```
+
 💪

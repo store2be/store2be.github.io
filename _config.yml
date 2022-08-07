@@ -14,7 +14,7 @@ description: >
   News, updates and tech tips from engineers at store2be
 author:
   name: store2be GmbH
-  email: info@store2be.com
+  email:
   twitter: store2be
 social:
   name: store2be tech
@@ -33,24 +33,20 @@ paginate_path: "/blog/:num/"
 permalink: pretty
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "page"
-  -
-    scope:
+  - scope:
       path: "index.html"
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: "contact.html"
     values:
       full_width: true

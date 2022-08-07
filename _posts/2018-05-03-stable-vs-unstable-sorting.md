@@ -1,16 +1,16 @@
 ---
 date: 2018-05-03
 categories:
-- Rails
-- Ruby
-- Algorithms
-- Testing
-- Environment
+  - Rails
+  - Ruby
+  - Algorithms
+  - Testing
+  - Environment
 title: 🔁 Stable vs unstable sorting
 author_staff_member: 04_alex
 ---
 
-At [store2be](http://store2be.com) we noticed a problem when running our Rails test suites in our two main development environments, on Mac OS X we had a test that would consistently fail, while on Linux it would pass fine every time, which in a way proves the old software development adage about the importance of having development machines as similar as possible to the the ones your production code will be running on.
+At store2be we noticed a problem when running our Rails test suites in our two main development environments, on Mac OS X we had a test that would consistently fail, while on Linux it would pass fine every time, which in a way proves the old software development adage about the importance of having development machines as similar as possible to the the ones your production code will be running on.
 
 Investigating we found that the issue was with the way the particular test was expecting elements to be sorted.
 

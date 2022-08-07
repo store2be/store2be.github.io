@@ -9,27 +9,25 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script>
     <!-- Load Posenet -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@0.1.2"></script>
-    <link href="https://unpkg.com/nes.css@2.1.0/css/nes.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/nes.css@2.1.0/css/nes.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=VT323"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://store2be.com">
-          <img
-            src="https://assets1.store2be.com/assets/layout/store2be-logo-70d78d2ed141bfd7d4ec4abfca925adaa4fb24696f39dfa3ae0b52c5dd41b44f.svg"
-            width="112"
-            height="28"
-          />
-        </a>
+        <a class="navbar-item" href="/"> store2be </a>
       </div>
 
       <div class="nav-link">
-        <a href="https://tech.store2be.com/about/" class="navbar-item">
-          Our team 💻
-        </a>
+        <a href="/about/" class="navbar-item"> Our team 💻 </a>
       </div>
     </nav>
     <div class="container is-fluid">
@@ -37,7 +35,9 @@
         <div class="message-body">
           <div id="step-1" class="single-step">
             <div class="directions">
-              <div class="single-step-text">Upload an image and just deal with it....</div>
+              <div class="single-step-text">
+                Upload an image and just deal with it....
+              </div>
               <div class="call-to-action">
                 <div class="call-to-action-text">Upload your cool image</div>
                 <label>
@@ -47,21 +47,27 @@
                 <span class="file-name"></span>
               </div>
               <div id="warning-message"></div>
-              <button id="force-button" class="nes-btn is-primary" style="display: none;">
+              <button
+                id="force-button"
+                class="nes-btn is-primary"
+                style="display: none"
+              >
                 Continue generating GIF anyway
               </button>
             </div>
           </div>
-          <div id="step-2" class="single-step" style="display: none;">
+          <div id="step-2" class="single-step" style="display: none">
             <div class="loading-wrapper">
               <span class="loading-message"></span>
             </div>
           </div>
-          <div id="step-3" class="single-step" style="display: none;">
-            <progress class="nes-progress is-pattern" value="0" max="100">0%</progress>
+          <div id="step-3" class="single-step" style="display: none">
+            <progress class="nes-progress is-pattern" value="0" max="100">
+              0%
+            </progress>
             Creating your GIF...
           </div>
-          <div id="step-4" class="single-step" style="display: none;">
+          <div id="step-4" class="single-step" style="display: none">
             <!-- <section class="section picasso"> -->
             <img id="result" height="500" class="result" />
             <!-- </section>					 -->

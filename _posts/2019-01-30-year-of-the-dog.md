@@ -1,10 +1,10 @@
 ---
 date: 2019-01-30
 categories:
-- Stack
-- GraphQL
-- Typescript
-- API
+  - Stack
+  - GraphQL
+  - Typescript
+  - API
 title: What changed in our stack in 2018
 author_staff_member: 03_tom
 medium_link: https://medium.com/@tom.houle/what-changed-in-our-stack-at-store2be-in-2018-a-retrospective-e3096f516c38
@@ -18,13 +18,13 @@ it was to get it to where it is now.
 
 We are building a platform to make live marketing scalable, measurable and
 targeted — as such we have multiple apps for the various actors of the platform
-and one API.  We want to make sure we can keep growing and adapting the
+and one API. We want to make sure we can keep growing and adapting the
 platform to changing needs, maintaining agility and stability in the process.
 This is our high-level mindset when making decisions regarding our tech stack.
 This post is a recap of how it has worked for us in 2018.
 
-![store2be developer, early 2018]({{ site.url }}/images/2018_retrospective/grumpy_pallas_cat_c_tambako_the_jaguar_flickr.jpg)
-_store2be developer, early 2018 (photo © Tambako The Jaguar, flickr)_
+![store2be developer, early 2018]({{ site.url }}/images/2018*retrospective/grumpy_pallas_cat_c_tambako_the_jaguar_flickr.jpg)
+\_store2be developer, early 2018 (photo © Tambako The Jaguar, flickr)*
 
 ## Frontend - the React apps
 
@@ -53,7 +53,7 @@ we can focus on the hard problems during code reviews.
 
 We liked the experience so much we implemented a backend service for email templating
 in typescript and [wrote about
-it](https://tech.store2be.com/email/sendwithus/mjml/typescript/react/2018/06/14/email-templates-at-store2be-and-gdpr/).
+it](/email/sendwithus/mjml/typescript/react/2018/06/14/email-templates-at-store2be-and-gdpr/).
 
 Another notable and much-appreciated addition to our toolbox was
 [react-storybook](https://github.com/storybooks/storybook) for our shared UI
@@ -65,7 +65,7 @@ Despite the numerous changes to the frontend workflow, architectural issues
 were still making our lives difficult.
 
 1. Our RESTful API structure had not evolved much: most of our endpoints were
-   mapping directly to database tables, with little additional logic.  With more
+   mapping directly to database tables, with little additional logic. With more
    resources and more complex business logic, that meant **a lot of business
    logic had to be implemented in the frontend** and merely validated by the
    API.
@@ -119,7 +119,7 @@ Two more pain-points that we did not identify before migrating, but improved as
 a result:
 
 - **Debuggability**. [GraphiQL][graphiql] has been a boon to identify where
-  errors come from.  With multiple requests that cannot be reproduced easily,
+  errors come from. With multiple requests that cannot be reproduced easily,
   it was sometimes hard to distinguish between backend and frontend issues (the
   network tools do not let you tweak and reproduce the requests easily). With
   queries you can share directly as a link — [GraphiQL][graphiql] can take
@@ -130,8 +130,8 @@ a result:
   [eslint-plugin-graphql](https://github.com/apollographql/eslint-plugin-graphql)
   to warn us when an app is using a field that has been deprecated.
 
-![store2be developer discovering GraphiQL]({{ site.url }}/images/2018_retrospective/developer_discovering_graphql.jpg)
-_store2be developer discovering GraphiQL (photo © unknown)_
+![store2be developer discovering GraphiQL]({{ site.url }}/images/2018*retrospective/developer_discovering_graphql.jpg)
+\_store2be developer discovering GraphiQL (photo © unknown)*
 
 ## GraphQL in our Rails API
 
@@ -188,7 +188,6 @@ this year. We discovered a lot of tools on the way, but one fun tool that bears
 mentioning is [click](https://github.com/databricks/click); it acts as a kind
 of REPL/terminal UI for your kubernetes cluster.
 
-
 ## The Tech Handbook
 
 At the end of 2017 our team was still at a scale where every developer had a
@@ -202,8 +201,8 @@ nice-to-have but a necessity.
 ## Sign-off
 
 ![store2be developer, early 2019]({{ site.url
-}}/images/2018_retrospective/hopeful_pallas_cat.jpg) _store2be developer, early
-2019 (photo © HuffingtonPost)_
+}}/images/2018*retrospective/hopeful_pallas_cat.jpg) \_store2be developer, early
+2019 (photo © HuffingtonPost)*
 
 We made rather dramatic changes to our stack in 2018 and did not compromise the
 delivery of actual features in the process. There was no hard, breaking change,
@@ -213,4 +212,3 @@ If you would like to know more, feel free to reach out to us on
 [twitter](https://twitter.com/store2be_tech).
 
 [graphiql]: https://github.com/graphql/graphiql
-

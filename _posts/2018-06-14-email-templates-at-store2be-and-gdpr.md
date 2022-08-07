@@ -1,18 +1,18 @@
 ---
 date: 2018-06-14
 categories:
-- Email
-- Sendwithus
-- MJML
-- Typescript
-- React
+  - Email
+  - Sendwithus
+  - MJML
+  - Typescript
+  - React
 title: Email templates at store2be and GDPR — How we migrated away from Sendwithus
 author_staff_member: 01_peter
 medium_link: https://medium.com/store2be-tech/email-templates-at-store2be-and-gdpr-how-we-migrated-away-from-sendwithus-e4350b2c24ca
 practical_dev_link: https://dev.to/peterfication/email-templates-at-store2be-and-gdprhow-we-migrated-away-from-sendwithus-4go7
 ---
 
-When [store2be](https://www.store2be.com) started 3 years ago we were searching for a nice way to handle email templating and sending. I came across [Sendwithus](https://www.sendwithus.com), an email template service that connects to a lot of different email providers, like SendGrid, Mailjet, etc.
+When store2be started 3 years ago we were searching for a nice way to handle email templating and sending. I came across [Sendwithus](https://www.sendwithus.com), an email template service that connects to a lot of different email providers, like SendGrid, Mailjet, etc.
 
 We decided to use Sendwithus as it decoupled the email templating from our main application and allowed non developers to handle email template changes. Furthermore, it was very helpful to have different email sending providers integrated automatically. Once, we had to switch the email provider and it took a matter of minutes with Sendwithus.
 
@@ -44,44 +44,43 @@ This is what we are working with now:
 - **Preview:** For development, you make GET request to the local express server (without hot reloading at the moment) to see a preview of the email. Online, the product team can do the same with the staging or production server. Furthermore, we have Swagger definitions for the email templates that can be transformed into Postman collections which makes the life of the product team even easier.
 - **Review:** All code at store2be is reviewed. This also applies to the new email template service.
 
-
 All in all, we are very happy with our decision of developing the email template service ourselves. Email templates are finally fun to work with.
 
 Here is how an email template could look like now:
 
 ```typescript
-import { generateFetchLocale } from 'lib/utils'
-import * as React from 'react'
+import { generateFetchLocale } from "lib/utils";
+import * as React from "react";
 
-import Button from 'templates/html/snippets/Button'
-import Closing from 'templates/html/snippets/Closing'
-import Footer from 'templates/html/snippets/Footer'
-import FullWidthBorder from 'templates/html/snippets/FullWidthBorder'
-import Greeting from 'templates/html/snippets/Greeting'
-import Header from 'templates/html/snippets/Header'
-import Layout from 'templates/html/snippets/Layout'
-import Text from 'templates/html/snippets/Text'
-import Title from 'templates/html/snippets/Title'
-import locales = require('templates/locales/Welcome.json')
+import Button from "templates/html/snippets/Button";
+import Closing from "templates/html/snippets/Closing";
+import Footer from "templates/html/snippets/Footer";
+import FullWidthBorder from "templates/html/snippets/FullWidthBorder";
+import Greeting from "templates/html/snippets/Greeting";
+import Header from "templates/html/snippets/Header";
+import Layout from "templates/html/snippets/Layout";
+import Text from "templates/html/snippets/Text";
+import Title from "templates/html/snippets/Title";
+import locales = require("templates/locales/Welcome.json");
 
-const Welcome: React.SFC<WelcomeProps> = props => {
-  const link = props.link || 'https://www.store2be.com'
-  const user = props.user || { title: '', lastname: '' }
-  const { locale } = props
-  const fetchLocale = generateFetchLocale(locale, locales)
+const Welcome: React.SFC<WelcomeProps> = (props) => {
+  const link = props.link || "https://www.store2be.com";
+  const user = props.user || { title: "", lastname: "" };
+  const { locale } = props;
+  const fetchLocale = generateFetchLocale(locale, locales);
   return (
     <Layout env={props.env}>
       <Header />
-      <Title>{fetchLocale('title')}</Title>
+      <Title>{fetchLocale("title")}</Title>
 
       <Greeting locale={locale} lastname={user.lastname} title={user.title} />
 
-      <Text>{fetchLocale('welcome_please_confirm')}</Text>
+      <Text>{fetchLocale("welcome_please_confirm")}</Text>
 
-      <Button link={link}>{fetchLocale('button')}</Button>
+      <Button link={link}>{fetchLocale("button")}</Button>
 
       <Text>
-        {fetchLocale('button_not_working') + ' '}
+        {fetchLocale("button_not_working") + " "}
         <a href={link}>{link}</a>
       </Text>
 
@@ -91,10 +90,10 @@ const Welcome: React.SFC<WelcomeProps> = props => {
 
       <Footer locale={locale} />
     </Layout>
-  )
-}
+  );
+};
 
-export default Welcome
+export default Welcome;
 ```
 
 ---

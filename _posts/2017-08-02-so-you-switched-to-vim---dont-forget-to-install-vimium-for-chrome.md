@@ -2,13 +2,13 @@
 date: 2017-08-02
 title: So you switched to Vim - Don't forget to install Vimium for Chrome!
 categories:
-- Vim
+  - Vim
 author_staff_member: 01_peter
 medium_link: https://medium.com/store2be-tech/so-you-switched-to-vim-dont-forget-to-install-vimium-for-chrome-c0dcb136562d
 practical_dev_link: https://dev.to/peterfication/so-you-switched-to-vim---dont-forget-to-install-vimium-for-chrome
 ---
 
-A few months ago [I wrote about my first steps with Vim](https://tech.store2be.com/vim/2017/04/18/finally-switching-to-vim/). Now I can finally say: I am faster with Vim than I ever have been with RubyMine 🎉 As soon as you get used to the Vim key bindings you demand them from every other program as well. In my mail program for example I try doing the most things with shortcuts now, too.
+A few months ago [I wrote about my first steps with Vim](/vim/2017/04/18/finally-switching-to-vim/). Now I can finally say: I am faster with Vim than I ever have been with RubyMine 🎉 As soon as you get used to the Vim key bindings you demand them from every other program as well. In my mail program for example I try doing the most things with shortcuts now, too.
 
 And recently I started using the Chrome Plugin [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb). It makes surfing the web much more efficient if you are used to the Vim key bindings already.
 
@@ -26,6 +26,6 @@ _T_ gives you an [fzf](https://github.com/junegunn/fzf)-like tab switcher. With 
 
 _f_/_F_ gives you letters in overlays for every link of the page and opens the link in the same tab/new tab.
 
-***
+---
 
 Vimium has even more features. [So check it out :)](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)

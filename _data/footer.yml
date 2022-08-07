@@ -1,41 +1,24 @@
 - links:
-  - name: Blog
-    link: /blog/
-  - name: Team
-    link: /about/
-  - name: Contact
-    link: /contact/
-  - name: We are hiring
-    link: https://store2be.softgarden.io/en/vacancies
+    - name: Blog
+      link: /blog/
+    - name: Team
+      link: /about/
+    - name: Contact
+      link: /contact/
 - links:
-  - name: Location finder
-    link: /https://www.store2be.com/en/locations/
-  - name: Event Analytics
-    link: /https://www.store2be.com/en/event-analytics/
-  - name: Press
-    link: /https://www.store2be.com/en/press/
-- links:
-  - name: Github
-    link: https://github.com/store2be
-    social_icon: Github
-    new_window: true
-  - name: Medium
-    link: https://medium.com/store2be-tech
-    social_icon: Medium
-    new_window: true
-  - name: Facebook
-    link: https://facebook.com/store2be
-    new_window: true
-    social_icon: Facebook
-  - name: Twitter
-    link: https://twitter.com/store2be_tech
-    social_icon: Twitter
-    new_window: true
-  - name: YouTube
-    link: https://www.youtube.com/channel/UCzqWMqx9_1YJlnW2XPCmGHA
-    social_icon: YouTube
-    new_window: true
-  - name: RSS
-    link: /feed.xml
-    social_icon: RSS
-    new_window: false
+    - name: Github
+      link: https://github.com/store2be
+      social_icon: Github
+      new_window: true
+    - name: Medium
+      link: https://medium.com/store2be-tech
+      social_icon: Medium
+      new_window: true
+    - name: YouTube
+      link: https://www.youtube.com/channel/UCzqWMqx9_1YJlnW2XPCmGHA
+      social_icon: YouTube
+      new_window: true
+    - name: RSS
+      link: /feed.xml
+      social_icon: RSS
+      new_window: false
